@@ -7,7 +7,7 @@ useEffect(()=>{
     console.log('inputRef',inputRef);
     console.log('inpurRef',inputRef.current);
     inputRef.current.focus()
-})
+},[])
   return <div>
 <input type='text' ref={inputRef} placeholder='enter userName'/>
 <input type='password' ref={passwordRef} placeholder='enter password'/>
